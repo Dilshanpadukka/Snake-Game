@@ -64,7 +64,7 @@ public class SnakeGame extends JPanel implements ActionListener, KeyListener {
         timer.start();
     }
 
-    @Override
+ 
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
 
@@ -175,7 +175,7 @@ public class SnakeGame extends JPanel implements ActionListener, KeyListener {
         } while (!validPosition);
     }
 
-    @Override
+ 
     public void actionPerformed(ActionEvent e) {
         if (inGame) {
             checkApple();
@@ -186,7 +186,7 @@ public class SnakeGame extends JPanel implements ActionListener, KeyListener {
         repaint();
     }
 
-    @Override
+   
     public void keyPressed(KeyEvent e) {
         int key = e.getKeyCode();
 
@@ -215,11 +215,11 @@ public class SnakeGame extends JPanel implements ActionListener, KeyListener {
         }
     }
 
-    @Override
+   
     public void keyReleased(KeyEvent e) {
     }
 
-    @Override
+   
     public void keyTyped(KeyEvent e) {
     }
 
